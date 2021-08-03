@@ -1,23 +1,20 @@
 const number=parseInt(prompt("Enter a positive number: "));
-// const number=23;
+// const number = 2; /
 
-let flag=0;
 
-if(number==1){
+
+if (number == 1) {
     console.log("1 is neither prime nor composite number.");
-}
-
-
-
-else if(number>1){
-    for(let i=2;i<number;i++){
-        if(number%i==0){
-            flag=1;
+} else if (number > 1) {
+    let flag = 0;
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            flag = 1;
         }
     }
-}
-if(flag==1){
-    console.log(`${number} is not a prime number`);
-}else{
-    console.log(`${number} is a prime number`);
+    if (flag == 1) {
+        console.log(`${number} is not a prime number`);
+    } else {
+        console.log(`${number} is a prime number`);
+    }
 }
