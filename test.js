@@ -1,3 +1,5 @@
-let a=15;
+function reverseString(str){
+    return str.split('').reverse().join('');
+}
 
-console.log(parseInt(a/10));
+console.log(reverseString("hello i am redoy"));
